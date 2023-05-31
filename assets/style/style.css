@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* ------------ Cabeçalho ------------ */
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+}
+
+.logo{
+    width: 40%;
+    height: 60%;
+}
+
+img{
+    width: 150px;
+}
+
+.menus .menusExtras{
+    float: right;
+    
+
+}
+
+.menus{
+    align-self:flex-end;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.menus li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.gradient-hr {
+    height: 10px; /* Altura da linha */
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    animation: gradiente-animacao 4s linear infinite;  /* Duração, tipo e repetição da animação */
+}
+
+
+@keyframes gradiente-animacao {
+    0% {
+      background-position: -100% center; /* Começa fora da tela à esquerda */
+    }
+    50% {
+      background-position: 100% center; /* Chega ao final da tela à direita */
+    }
+    100% {
+      background-position: -100% center; /* Retorna para fora da tela à esquerda */
+    }
+  }
+
+/* ------------------------------- */
+/* ------------ main ------------ */
+
+main {
+    width: 100%;
+    align-items: center;
+    background-color:rgb(253, 167, 53);
+   
+}
+
+.principaisSkills {
+    float: left;
+    width: 400px;
+    background-color: bisque;
+    margin: 0 0 0 20px;
+}
+
+.conteudo {
+    float: right;
+    width: 800px;
+    background-color: blue;
+    gap: 25px;
+
+}
+
+/* ------------------------ */
+/* ------------ rodape ------------ */
+footer{
+    clear: both;
+    padding: 5px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.content {
+    
+    width: 500px;
+}
+
