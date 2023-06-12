@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Webpage</title>
+    <title>Home | Webpage</title>
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&display=swap" rel="stylesheet">
+    <!---->
 
     <link rel="stylesheet" href="/assets/style/style.css">
 
@@ -12,49 +17,162 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <header class="cabeçalho">
-        <div class="logo">
-            <img src="/assets/img/logo.png" alt="MeuLogo">
-        </div>
 
+    <header class="cabecalho">
         
-        <nav class="menus">
+        <section class="cabecalho-main">
 
-            <div class="menuExtras">
-                <p>EN/PT</p>
-                <p>botao modo Escuro/Claro</p>
+            <div class="cabecalho-main-top">
+
+                <div class="titulos">
+                    <h2>Vitor Guilherme</h2>
+                    <p>vitor.wolf20@gmail.com</p>
+                </div>
+
+                <nav clas="botoes-nav">
+                    <button>EN</button>/<button>PT</button>
+                    <button>&#9789</button>/<button>&#9728</button>
+                </nav>
+
             </div>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Curriculo</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-            
-            
-        </nav>
 
-    </header>
+            <div class="resumo">
+
+                <figure class="foto">
+                    <img src="/assets/img/logo.png" alt="MeuLogo" width="250px">
+                </figure>
+                
+                <div class="apresentacao">
+                    <h1>Olá meu nome é Vitor Guilherme e consturo paginas web</h1>
+                    <p>Estudande Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quae obcaecati labore aliquam ipsam illum quaerat quidem dolores dolore ipsum, odio dolorem ad fuga possimus repellendus ab pariatur qui nulla!</p>
+                
+                </div>
+
+                <nav class="menus">            
+                    <ul>
+                        <li class="menu"><a href="#">Github</a></li>
+                        <li class="menu"><a href="#">Linkedin</a></li>
+                        <li class="menu"><a href="#">Projetos</a></li>
+                        <li class="menu"><a href="#">Curriculo</a></li>
+                    </ul>
+                </nav>
+                    
+                    
+            </div>
+
     
+    
+
+        </section>
+
+    </header>    
+
     <hr class="gradient-hr">
 
     <!-- CORPO -->
-    <main>teste1
-        <section class="principaisSkills">
-            teste2
+
+        <section class="sobre">
+
+            <div class="sobreMim">
+                <h1>Sobre</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, fugit placeat? Labore ea libero dolore officiis porro. Ut autem aut accusantium recusandae quae ab, tempora, dolores impedit aliquam consectetur explicabo!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, fugit placeat? Labore ea libero dolore officiis porro. Ut autem aut accusantium recusandae quae ab, tempora, dolores impedit aliquam consectetur explicabo!</p>
+            </div>
         </section>
 
-        <section class="conteudo">
-            teste3
-        </section>
-    </main>
+        <section class="skills">
 
+            <div class="areaSkills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Html5</li>
+                    <li>Javascript</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Karate</li>
+                    <li>Ouvir musica</li>
+                    <li>Jogos</li>
+                    <li>React</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <hr class="gradient-hr">
+
+        <section class="formacao">
+            <h2>Formação Academica</h2>
+
+            <div class="formacaoAcademica">
+                <ul>
+                    <li>Cruzeiro do Sul</li>
+                    <li>Alura</li>
+                    <li>Cruzeiro do Sul</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <hr class="gradient-hr">
+
+        <section class="projetos">
+            <h2>Experiência profissional</h2>
+
+            <div class="projetos">
+                <ul>
+                    <li>
+                        <h3>Decodificador de texto</h3>
+                        <p>Challenge Alura Codificador</p>
+                        <button class="repositorio"><a href="#">Repositório</a></button>
+                        <button class="demo"><a href="#">Ver Demo</a></button>
+                    </li>
+                    <li>
+                        <h3>Decodificador de texto</h3>
+                        <p>Challenge Alura Codificador</p>
+                        <button class="repositorio"><a href="#">Repositório</a></button>
+                        <button class="demo"><a href="#">Ver Demo</a></button>
+                    </li>
+                    <li>
+                        <h3>Decodificador de texto</h3>
+                        <p>Challenge Alura Codificador</p>
+                        <button class="repositorio"><a href="#">Repositório</a></button>
+                        <button class="demo"><a href="#">Ver Demo</a></button>
+                    </li>
+                </ul>
+            </div>
+        </section>   
+
+        <hr class="gradient-hr">
     <!-- RODAPE -->    
-    <footer>
-        <div class="content">
-            teste4
+    <footer class="rodape">
+
+        <div class="contato">
+            <div class="contato-top">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, obcaecati.</p>
+            </div>
+
+            <div class="formulario">
+                <input type="text" name="Nome" id="nome" placeholder="Nome">
+                <input type="email" name="E-mail" id="email" placeholder="E-mail">
+                <input type="text" name="Assunto" id="assunto" placeholder="Assunto">
+                <textarea name="Mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <input type="submit" value="Enviar Mensagem">
+            </div>
+
+            <hr class="gradient-hr">
+
+            <div class="contato-inferior">
+                <p>Desenvolvido por Vitor Guilherme 2023</p>
+            </div>
+
         </div>
+
     </footer>
         
     
