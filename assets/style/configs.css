@@ -1,0 +1,42 @@
+:root{
+    --cor-background: #f0f0f0;
+    --cor-backgroun2: #d8d8d8;
+    --cor-textos: #c0c0a8;
+    --cor-bordas: #604848;
+    --cor-titulos: #484848;
+    --font-family-primary: 'Oxanium', cursive;
+}
+
+* {
+    margin: 0px;
+    font-family: var(--font-family-primary);
+}
+
+h1, h2, h3{
+    color: var(--cor-titulos);
+}
+
+p{
+    color: var(--cor-textos);
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-background);
+}
+
+input{
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    
+}
+textarea{
+    border: none;
+    border-radius: 4px;
+    resize: none;
+}
