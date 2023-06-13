@@ -26,6 +26,13 @@ li {
 
 a{
     text-decoration: none;
+}
+
+.menu a{
+    color: var(--cor-titulos);
+}
+
+.demo a{
     color: var(--cor-background);
 }
 
