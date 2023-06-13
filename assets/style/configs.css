@@ -4,7 +4,7 @@
     --cor-textos: #c0c0a8;
     --cor-bordas: #604848;
     --cor-titulos: #484848;
-    --font-family-primary: 'Oxanium', cursive;
+    --font-family-primary: 'Oxanium', cursive, Arial, sans-serif;
 }
 
 * {
