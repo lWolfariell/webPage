@@ -27,8 +27,9 @@ li {
 /* ------------ Cabeçalho ------------ */
 
 .cabecalho {
-    background-color: var(--cor-background);
     display: flex;
+    background-color: var(--cor-background);
+    
 }
 
 .cabecalho-main-top{
@@ -36,17 +37,18 @@ li {
     justify-content: space-around;
 }
 
-.menus{
+.foto img{
+    width: 30%;
+}
+
+.menus .menus-nav{
     display: flex;
     flex-direction: row;
-    
 }
 
-.menu{
-    flex: 1;
+.apresentacao{
+    padding: 2%;
 }
-
-
 
 .gradient-hr {
     height: 10px; /* Altura da linha */
@@ -68,8 +70,35 @@ li {
   }
 
 /* ------------------------------- */
-/* ------------ main ------------ */
+/* ------------ Corpo ------------ */
 
+.sobre{
+    background-color: var(--cor-backgroun2);
+    padding: 2%;
+}
+
+.sobre p{
+    color: var(--cor-bordas);
+}
+
+.areaSkills h2{
+    text-align: center;
+}
+
+.skilltree{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 250px;
+    gap: 8px;
+}
+
+.skilltree .skill {
+    align-self: center;
+    width: 50%;
+    height: 118px;
+    
+}
 
 /* ------------------------ */
 /* ------------ rodape ------------ */
