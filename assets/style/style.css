@@ -1,5 +1,7 @@
 
 /* Configs Gerais */
+@media screen { max-width: 500px;
+    
 
 
 /* ------------ Cabeçalho ------------ */
@@ -259,3 +261,4 @@ textarea{
 
 
 
+}
