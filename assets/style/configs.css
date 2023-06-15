@@ -1,16 +1,17 @@
 :root{
-    --cor-background: #f0f0f0;
-    --cor-backgroun2: #d8d8d8;
-    --cor-textos: #c0c0a8;
-    --cor-bordas: #604848;
+    --cor-cinza-claro: #f0f0f0;
+    --cor-cinza-middle: #d8d8d8;
+    --cor-cinha-high: #c0c0a8;
+    --cor-roxo-escuro: #604848;
     --cor-titulos: #484848;
-    --font-family-primary: 'Oxanium', cursive, Arial, sans-serif;
+    --font-family-primary:'Oxanium', cursive;
+    --espacamento-padding: 1rem;
 }
-
-* {
+body{
     margin: 0px;
     font-family: var(--font-family-primary);
 }
+
 
 h1, h2, h3{
     color: var(--cor-titulos);

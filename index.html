@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Webpage</title>
+    
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500&display=swap" rel="stylesheet">
     <!---->
-    <link rel="stylesheet" href="assets/style/configs.css">
+    
+    <!-- <link rel="stylesheet" href="assets/style/reset.css">
+     -->
+     <link rel="stylesheet" href="assets/style/configs.css">
     <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
@@ -19,44 +23,65 @@
     <!-- CABEÇALHO -->
 
     <header class="cabecalho">
-        
-        <section class="cabecalho-main">
 
-            <div class="cabecalho-main-top">
-
-                <div class="titulos">
-                    <h2>Vitor Guilherme</h2>
-                    <p>vitor.wolf20@gmail.com</p>
-                </div>
-
-                <nav clas="botoes-nav">
+        <div class="main-top">            
+                <h3>Vitor Guilherme</h3>
+                <p>vitor.wolf20@gmail.com</p>          
+            <!-- <nav clas="botoes-nav">
                     <button>EN</button>/<button>PT</button>
                     <button>&#9789</button>/<button>&#9728</button>
-                </nav>
+                </nav> -->         
 
-            </div>
+        </div>
 
-            <div class="resumo">
+        <div class="resumo">
 
                 <figure class="foto">
                     <img src="assets/img/foto.png" alt="MeuLogo" width="250px">
                 </figure>
-                
+
                 <div class="apresentacao">
-                    <h1>Vitor Guilherme | Desenvolvedor Front-End </h1>
-                    <p>Me chamo Vitor e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no segundo semestre do curso. Durante meus estudos, adquiri habilidades em HTML, CSS, Javascript e SQL também tenho experiência em trabalhar em equipe e implantações de softwares administrativos (ERP).</p><br>
-                    <p>Espero contribuir com meus conhecimentos e habilidades para projetos de desenvolvimento Front End ou Dados.</p><br>
+                    <h1>Vitor Guilherme | Desenvolvedor Front-End</h1>
+                    <p>Me chamo Vitor e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no segundo semestre do curso. Durante meus estudos, adquiri habilidades em HTML, CSS, Javascript e SQL também tenho experiência em trabalhar em equipe e implantações de softwares administrativos (ERP).</p>
+                    <p>Espero contribuir com meus conhecimentos e habilidades para projetos de desenvolvimento Front End ou Dados.</p>
                     <p>Estou em transição de carreira e, apesar de ainda estar aprendendo, estou muito dedicado em desenvolver minhas habilidades e crescer na área de desenvolvimento</p>
                 </div>
 
                 <nav class="menus">            
                     <ul class="menus-nav">
-                        <li class="menu"><a href="https://github.com/lWolfariell" target="_blank">Github &#x1F87D;</a></li>
-                        <li class="menu"><a href="https://www.linkedin.com/in/vitor-gui/" target="_blank">Linkedin &#x1F87D;</a></li>
-                        <li class="menu"><a href="#">Projetos &#x1F87D;</a></li>
-                        <li class="menu"><a href="#">Curriculo &#x1F87D;</a></li>
+                        <li class="menu">                            
+                            <a href="https://github.com/lWolfariell" target="_blank">Github</a>
+                        </li>
+                        <li class="menu">
+                            <a href="https://www.linkedin.com/in/vitor-gui/" target="_blank">Linkedin</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">Curriculo</a>
+                        </li>
                     </ul>
                 </nav>
+        </div>
+
+
+        
+
+        
+    </header>
+
+                   
+
+            </div>
+
+            <div class="resumo">
+
+                
+                
+                
+
+                
                     
                     
             </div> 
@@ -64,9 +89,7 @@
 
         </section>
 
-    </header>    
-
-    <hr class="gradient-hr">
+    </header>
 
     <!-- CORPO -->
 
@@ -181,13 +204,14 @@
                     
                 </div>
 
-        
+        </section>  
 
         <section class="experiencia">
             
             <h2>Experiência profissional</h2>
 
             <div class="Exp-projetos">
+                
                 <ul class="projetos">
 
                     <li class="projeto">
@@ -243,22 +267,37 @@
 
             <div class="contato-top">
                 <h2>Contato</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, obcaecati.</p>
+                <p>Quer entrar em contato comigo?
+                    Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
 
             <div class="formulario">
-                <input type="text" name="Nome" id="nome" placeholder="Nome">
-                <input type="email" name="E-mail" id="email" placeholder="E-mail">
-                <input type="text" name="Assunto" id="assunto" placeholder="Assunto">
-                <textarea name="Mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                <input type="submit" value="Enviar Mensagem">
+                <div class="form_opt">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="Nome" id="nome">
+                </div>
+
+                <div class="form_opt">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="E-mail" id="email">
+                </div>        
+
+                <div class="form_opt">
+                    <input type="text" name="Assunto" id="assunto" placeholder="Assunto">
+                    <textarea name="Mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                </div>
+
+                <div class="form_opt">
+                    <input class="input-btn" type="submit" value="Enviar Mensagem">
+                </div>
             </div>
+        </div>
 
-            <hr class="gradient-hr">
-
-            <div class="contato-inferior">
+        <div class="contato-inferior">
+            
+            
                 <p>Desenvolvido por Vitor Guilherme 2023</p>
-            </div>
+            
 
         </div>
 
