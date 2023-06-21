@@ -1,16 +1,8 @@
 
 /* Configs Gerais */
-@media screen { max-width: 500px;
-    
-
-
 /* ------------ Cabeçalho ------------ */
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;    
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: var(--cor-cinza-claro);
 
 }
@@ -154,10 +146,10 @@
 .projetos .projeto{
     padding: 0%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
-    align-items: flex-start;   
-    justify-content: center;    
+    /* align-items: flex-start;   
+    justify-content: center; */    
 }
 
 .botoes-rep{
@@ -206,24 +198,26 @@ footer{
     flex-direction: column;
 }
 
-.contato .formulario{
+.formulario{
     display:flex;
     flex-direction: column;    
     gap: 30px;
 }
 
 input{
-    width: 20rem;
+    width: 100%;
     font-size: 16px;
 }
 
-.formulario #mensagem{
-    margin: 10% 0% 0% 0%;
+.assunto {
+    padding-left: 0.5rem;
+    font-size: 1rem;
 }
 
-textarea{
-    width: 18.2rem;
+.mensagem {    
+    width: 92%;
     height: 15rem;
+    font-size: 1rem;
     padding: var(--espacamento-padding);
 }
 
@@ -244,6 +238,10 @@ textarea{
         color: var(--cor-cinza-claro);
 }
 
+.contato-top p {
+    margin-bottom: 1rem;
+}
+
 .contato-inferior{
     display: flex;
     flex-direction: row;
@@ -252,13 +250,125 @@ textarea{
     background-color:white;
     width: 100%;
     height: 7rem;
-    text-align: center;
-
-   
+    text-align: center;   
 }
 
 
 
 
+@media screen and (min-width:768px) {
+    .skilltree .skill {
+        width: 15rem;
+        max-width: 200px;
+    }
 
+    .skilltree {
+        justify-content: center;
+    }
+
+
+    .hobbiesTree .hobbie{
+        width: 15rem;
+        max-width: 200px;
+    }
+
+    .hobbiesTree {
+        justify-content: center;
+    }
+
+    .formacaoTree {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .projetos .projeto {
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .mensagem {    
+        width: 96%;
+    }
+
+    @media screen and (min-width: 1024px){
+        .main-top {
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .apresentacao{
+            line-height: 2rem;
+        }
+
+        .apresentacao h1 {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+        }
+
+        .menus-nav {
+            align-items: center;
+        }
+
+        .resumo {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        .foto img {
+            width: 30rem;
+            max-width: 300px;
+        }
+
+        .sobre {
+            padding: 2rem 17rem 2rem 7rem;
+        }
+
+        .skilltree .skill {
+            max-width: 120px;
+        }
+
+        .hobbiesTree .hobbie{
+            max-width: 120px;
+        }
+
+        .formacoes {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 100%;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        
+        .projetos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5rem;
+            margin-left: 10rem;
+            align-items: baseline;
+        }
+
+        .projeto {
+            max-width: 400px;
+        }
+
+        .assunto{
+            width: 99.5%;
+        }
+        .mensagem {    
+            width: 97.5%;
+        }
+
+
+
+    }
+    
+
+    
 }

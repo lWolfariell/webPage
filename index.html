@@ -14,7 +14,8 @@
     
     <!-- <link rel="stylesheet" href="assets/style/reset.css">
      -->
-     <link rel="stylesheet" href="assets/style/configs.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/configs.css">
     <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
@@ -45,25 +46,29 @@
                     <p>Me chamo Vitor e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no segundo semestre do curso. Durante meus estudos, adquiri habilidades em HTML, CSS, Javascript e SQL também tenho experiência em trabalhar em equipe e implantações de softwares administrativos (ERP).</p>
                     <p>Espero contribuir com meus conhecimentos e habilidades para projetos de desenvolvimento Front End ou Dados.</p>
                     <p>Estou em transição de carreira e, apesar de ainda estar aprendendo, estou muito dedicado em desenvolver minhas habilidades e crescer na área de desenvolvimento</p>
+                    <nav class="menus">            
+                        <ul class="menus-nav">
+                            <li class="menu">                            
+                                <a href="https://github.com/lWolfariell" target="_blank">Github</a>
+                            </li>
+                            <li class="menu">
+                                <a href="https://www.linkedin.com/in/vitor-gui/" target="_blank">Linkedin</a>
+                            </li>
+                            <li class="menu">
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li class="menu">
+                                <a href="#">Curriculo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
                 </div>
 
-                <nav class="menus">            
-                    <ul class="menus-nav">
-                        <li class="menu">                            
-                            <a href="https://github.com/lWolfariell" target="_blank">Github</a>
-                        </li>
-                        <li class="menu">
-                            <a href="https://www.linkedin.com/in/vitor-gui/" target="_blank">Linkedin</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Curriculo</a>
-                        </li>
-                    </ul>
-                </nav>
+                
         </div>
+
+        
 
 
         
@@ -183,19 +188,19 @@
                     <ul class="formacaoTree">
 
                         <li class="formacao">
-                            <img src="assets/img/universidade1.png" alt="Formacao">
+                            <img class="formacaoImg" src="assets/img/universidade1.png" alt="Formacao">
                             <h3>Análise e desenvolvimento de Sistema</h3>
                             <p>2024 - Primeiro semestre</p>
                         </li>
 
                         <li class="formacao">
-                            <img src="assets/img/alura-formacao.png" alt="Alura">
+                            <img class="formacaoImg" src="assets/img/alura-formacao.png" alt="Alura">
                             <h3>Formação Front-End</h3>
                             <p>2023 - Alura</p>
                         </li>
 
                         <li class="formacao">
-                            <img src="assets/img/posgrad.png" alt="teste">
+                            <img class="formacaoImg" src="assets/img/posgrad.png" alt="teste">
                             <h3>Outra Formação</h3>
                             <p>teste</p>
                         </li>
@@ -267,7 +272,7 @@
 
             <div class="contato-top">
                 <h2>Contato</h2>
-                <p>Quer entrar em contato comigo?
+                <p>Quer entrar em contato comigo?<br>
                     Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
 
@@ -282,14 +287,13 @@
                     <input type="email" name="E-mail" id="email">
                 </div>        
 
-                <div class="form_opt">
-                    <input type="text" name="Assunto" id="assunto" placeholder="Assunto">
-                    <textarea name="Mensagem" id="mensagem" placeholder="Mensagem"></textarea>
-                </div>
-
-                <div class="form_opt">
+                
+                    <input class="assunto" type="text" name="Assunto" id="assunto" placeholder="Assunto">
+                    
+                    <textarea class="mensagem" name="Mensagem" placeholder="Mensagem"></textarea>
+                           
                     <input class="input-btn" type="submit" value="Enviar Mensagem">
-                </div>
+                
             </div>
         </div>
 
