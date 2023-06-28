@@ -279,19 +279,26 @@
             <div class="formulario">
                 <div class="form_opt">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="Nome" id="nome">
+                    <input type="text" name="Nome" id="nome" minlength="3" maxlength="50" required>
+                    <span class="mensagem-erro"></span>
                 </div>
 
                 <div class="form_opt">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="E-mail" id="email">
+                    <input type="email" name="E-mail" id="email" required>
+                    <span class="mensagem-erro_nome"></span>
                 </div>        
 
-                
-                    <input class="assunto" type="text" name="Assunto" id="assunto" placeholder="Assunto">
-                    
-                    <textarea class="mensagem" name="Mensagem" placeholder="Mensagem"></textarea>
-                           
+                <div class="assunto-cont">
+                    <input class="assunto" type="text" name="Assunto" id="assunto" placeholder="Assunto" minlength="3" maxlength="50" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="mensagem-cont">
+                    <textarea class="mensagem" name="Mensagem" placeholder="Mensagem" minlength="3" maxlength="300" required></textarea>
+                    <span class="mensagem-erro"></span>
+                </div>
+
                     <input class="input-btn" type="submit" value="Enviar Mensagem">
                 
             </div>
@@ -307,7 +314,7 @@
 
     </footer>
         
-    
+    <script src="assets/main.js"></script>
 </body>
 
 </html>

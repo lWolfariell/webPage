@@ -1,0 +1,12 @@
+#nomeErro {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #nomeErro.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
