@@ -20,8 +20,10 @@
     padding: var(--espacamento-padding);
 }
 
-.foto img{
-    width: 8rem;
+.foto{
+    width: 9rem;
+    max-width: 150px;
+    padding: 0 0 0 1rem;
 }
 
 .menus .menus-nav{
