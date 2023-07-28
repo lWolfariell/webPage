@@ -26,12 +26,18 @@
     padding: 0 0 0 1rem;
 }
 
-.menus .menus-nav{
+.menus{
     display: flex;
-    flex-direction: row;
     padding: 1rem;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 20px;
+}
+
+.menus-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 
