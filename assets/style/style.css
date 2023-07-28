@@ -29,6 +29,7 @@
     flex-direction: row;
     padding: 1rem;
     gap: 1rem;
+    font-size: 1rem;
 }
 
 
@@ -143,14 +144,19 @@
     padding: 0%;
 }
 
-.projetos .projeto{
-    padding: 0%;
+.projetos{
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* align-items: flex-start;   
-    justify-content: center; */    
+    align-items: center;
+    gap: 1rem;
 }
+
+.projetos li{
+    display: flex;
+    flex-direction: column;
+    max-width: 296px;
+}
+
 
 .botoes-rep{
     display: flex;
@@ -254,9 +260,20 @@ input{
 }
 
 
+@media screen and ( min-width:768px ) {
 
+    .resumo{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 
-@media screen and (min-width:768px) {
+    .foto{
+        width: 9rem;
+        max-width: 150px;
+        padding: 2rem;
+    }
+
     .skilltree .skill {
         width: 15rem;
         max-width: 200px;
@@ -281,94 +298,124 @@ input{
         justify-content: center;
     }
 
-    .projetos .projeto {
-        padding: 0%;
+    .projetos {
+        display: flex;
+        gap: 5rem;
+        align-items: flex-start;
+        padding: 2rem;
+        
+    }
+
+    .projetos li{
+        gap: 1rem;
+    }
+
+    .projetos img{        
+        max-width: 850px;
+        width: 43rem;
+    }
+
+    .infos{
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
     }
 
     .mensagem {    
         width: 96%;
-    }
-
-    @media screen and (min-width: 1024px){
-        .main-top {
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .apresentacao{
-            line-height: 2rem;
-        }
-
-        .apresentacao h1 {
-            font-size: 3.5rem;
-            line-height: 3.5rem;
-        }
-
-        .menus-nav {
-            align-items: center;
-        }
-
-        .resumo {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-        }
-
-        .foto img {
-            width: 30rem;
-            max-width: 300px;
-        }
-
-        .sobre {
-            padding: 2rem 17rem 2rem 7rem;
-        }
-
-        .skilltree .skill {
-            max-width: 120px;
-        }
-
-        .hobbiesTree .hobbie{
-            max-width: 120px;
-        }
-
-        .formacoes {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            font-size: 100%;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        
-        .projetos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5rem;
-            margin-left: 10rem;
-            align-items: baseline;
-        }
-
-        .projeto {
-            max-width: 400px;
-        }
-
-        .assunto{
-            width: 99.5%;
-        }
-        .mensagem {    
-            width: 97.5%;
-        }
-
-
-
-    }
-    
-
-    
+    }    
 }
+
+@media screen and (min-width: 1025px) {
+    .main-top {
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao{
+        line-height: 2rem;
+    }
+
+    .apresentacao h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .menus-nav {
+        align-items: center;
+    }
+
+    .resumo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .foto{
+        width: 23rem;
+        max-width: 368px;
+    }
+
+    .sobre {
+        padding: 2rem 17rem 2rem 7rem;
+    }
+
+    .skilltree .skill {
+        max-width: 120px;
+    }
+
+    .hobbiesTree .hobbie{
+        max-width: 120px;
+    }
+
+    .formacoes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    
+    .projetos {
+        display: flex;
+        gap: 5rem;
+        padding: 0 10rem 0 10rem;
+        align-items: flex-start;
+    }
+
+    .projetos li{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .projetos img{        
+        max-width: 750px;
+    }
+
+
+    .projeto2 {
+        flex-direction: row-reverse!important;
+        align-self: flex-end;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .assunto{
+        width: 99.5%;
+    }
+    .mensagem {    
+        width: 97.5%;
+    }
+
+
+
+} 
