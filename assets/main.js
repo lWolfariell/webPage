@@ -1,21 +1,29 @@
-const submit = document.querySelector('.input-btn');
+document.getElementById('contato_form').addEventListener('submit', (event) =>{
+    event.preventDefault()//evitar atualização da tela
+    let nome = document.getElementById('nome').value
+    let email = document.getElementById('email').value
+    let assunto = document.getElementById('assunto').value
+    let mensagem = document.getElementById('mensagem').value
 
-submit.addEventListener('click', validar);
-
-function validar(e) {
-    e.preventDefault();
-
-    const nome = document.getElementById('email');
-    let valido = true;
-
-    if (!nome.value) {
-        const nomeErro = document.querySelector('.mensagem-erro_nome');
-        nomeErro.classList.add('visible');
-        nome.classList.add('invalid');
-        nomeErro.setAttribute('aria-hidden', false);
-        nomeErro.setAttribute('aria-invalid', true);
-    }
-
-    return valido;
-}
-
+    //enviar dados do formulário para servidor:
+    fetch('/enviar_email.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({nome, email, assunto, mensagem }),
+    })
+    .then(response => {
+        if( response.ok) {
+            alert('Mensagem enviada! Obrigado!')
+        } else {
+            alert('Ocorreu um erro ao enviar a mensagem.')
+        }
+    })
+    .catch(error => {
+        console.error('Erro ao enviar a mensagem:', error);
+        alert('Ocorreu um erro ao enviar a mensagem.')
+    })
+    
+    
+})
