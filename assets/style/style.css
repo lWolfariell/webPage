@@ -1,5 +1,14 @@
-
 /* Configs Gerais */
+
+.input-btn {
+    cursor: pointer;
+}
+
+input.input-btn:hover{
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-roxo-escuro);
+    transition: 100ms;
+}
 /* ------------ Cabeçalho ------------ */
 
 .cabecalho {
@@ -7,33 +16,33 @@
 
 }
 
-.main-top{
+.main-top {
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     justify-content: space-around;
-    gap: 1rem;   
+    gap: 1rem;
     padding: var(--espacamento-padding);
 }
 
-.apresentacao{
-    font-size: 1em;        
+.apresentacao {
+    font-size: 1em;
     padding: var(--espacamento-padding);
 }
 
-.foto{
+.foto {
     width: 9rem;
     max-width: 150px;
     padding: 0 0 0 1rem;
 }
 
-.menus{
+.menus {
     display: flex;
     padding: 1rem;
     gap: 1rem;
     font-size: 20px;
 }
 
-.menus-nav{
+.menus-nav {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -42,41 +51,43 @@
 
 
 .gradient-hr {
-    height: 1rem; /* Altura da linha */
+    height: 1rem;
+    /* Altura da linha */
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    animation: gradiente-animacao 4s linear infinite;  /* Duração, tipo e repetição da animação */
+    animation: gradiente-animacao 4s linear infinite;
+    /* Duração, tipo e repetição da animação */
 }
 
 /* ------------------------------- */
 /* ------------ Corpo ------------ */
 
-.sobre{
-    background-color: var(--cor-cinza-middle);    
+.sobre {
+    background-color: var(--cor-cinza-middle);
     padding: var(--espacamento-padding);
 }
 
-.sobre p{
+.sobre p {
     color: var(--cor-bordas);
 }
 
-.skills{
+.skills {
     background-color: var(--cor-cinza-claro);
     padding: var(--espacamento-padding);
 }
 
-.areaSkills h2{
+.areaSkills h2 {
     text-align: center;
 }
 
-.skilltree{
+.skilltree {
     padding: 0%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 0;
-    gap: 16px;  
-    
+    gap: 16px;
+
 }
 
 .skilltree .skill {
@@ -87,16 +98,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
     flex-grow: 1;
     padding: var(--espacamento-padding);
 }
 
-.hobbies h2{
+.hobbies h2 {
     text-align: center;
 }
 
-.hobbiesTree{
+.hobbiesTree {
     padding: 0%;
     display: flex;
     align-items: flex-start;
@@ -114,7 +125,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
     flex-grow: 1;
     padding: var(--espacamento-padding);
 }
@@ -124,7 +135,7 @@
     padding: var(--espacamento-padding);
 }
 
-.formacoes h2{
+.formacoes h2 {
     text-align: center;
 }
 
@@ -137,146 +148,163 @@
     padding: 0%;
 }
 
-.formacaoTree h3{
+.formacaoTree h3 {
     font-size: 1rem;
 }
 
 
-.experiencia{
+.experiencia {
     background-color: var(--cor-cinza-claro);
     padding: var(--espacamento-padding);
 }
 
-.experiencia h2{
+.experiencia h2 {
     text-align: center;
     padding: 0%;
 }
 
-.projetos{
+.projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.projetos li{
+.projetos li {
     display: flex;
     flex-direction: column;
     max-width: 296px;
 }
 
 
-.botoes-rep{
+.botoes-rep {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
 }
 
-.repositorio{
+.repositorio {
     box-sizing: border-box;
     width: 100px;
     height: 40px;
     border: 1px solid var(--cor-roxo-escuro);
 }
 
-.repositorio a{
+.repositorio a {
     color: var(--cor-roxo-escuro);
 }
 
 
-.demo{
-        box-sizing: border-box;
-        width: 100px;
-        height: 40px;
-        border: 1px solid var(--cor-roxo-escuro);
-        background-color: var(--cor-titulos);
-        color: var(--cor-cinza-claro);
+.demo {
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    border: 1px solid var(--cor-roxo-escuro);
+    background-color: var(--cor-titulos);
+    color: var(--cor-cinza-claro);
 }
 
 
 
 /* ------------------------ */
 /* ------------ rodape ------------ */
-footer{
-        background-color: var(--cor-cinza-middle);
-        padding: 0%;
+footer {
+    background-color: var(--cor-cinza-middle);
+    padding: 0%;
 }
 
 .contato {
     padding: var(--espacamento-padding);
 }
 
-.contato .contato-top{
+.contato .contato-top {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
-.formulario{
-    display:flex;
-    flex-direction: column;    
+.formulario {
+    display: flex;
     gap: 30px;
 }
 
-input{
-    width: 100%;
+.entre_contato {
+    display: none;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    border-radius: 15px;
+    -webkit-box-shadow: 6px 5px 16px 0px rgba(161, 161, 161, 1);
+    -moz-box-shadow: 6px 5px 16px 0px rgba(161, 161, 161, 1);
+    box-shadow: 6px 5px 16px 0px rgba(161, 161, 161, 1);
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+input {
     font-size: 16px;
+    width: 100%;
 }
 
-.assunto {
-    padding-left: 0.5rem;
-    font-size: 1rem;
+.form_opt {
+    width: 100%;
 }
 
-.mensagem {    
-    width: 92%;
-    height: 15rem;
+.mensagem {
     font-size: 1rem;
     padding: var(--espacamento-padding);
+    width: 93%;
+    height: 200px;
 }
 
-.formulario label{
+.formulario label {
     position: absolute;
     font-size: 14px;
     padding: 5px 0px 0px 5px;
     color: var(--cor-cinza-middle);
-    line-height: 0.9em;  
+    line-height: 0.9em;
 }
 
-.input-btn{
+.input-btn {
     box-sizing: border-box;
-        width: 10rem;
-        height: 40px;
-        border: 1px solid var(--cor-roxo-escuro);
-        background-color: var(--cor-titulos);
-        color: var(--cor-cinza-claro);
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--cor-roxo-escuro);
+    background-color: var(--cor-titulos);
+    color: var(--cor-cinza-claro);
 }
 
 .contato-top p {
     margin-bottom: 1rem;
 }
 
-.contato-inferior{
+.contato-inferior {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: white;
     width: 100%;
     height: 7rem;
-    text-align: center;   
+    text-align: center;
 }
 
 
-@media screen and ( min-width:768px ) {
+@media screen and (min-width:768px) {
 
-    .resumo{
+    .resumo {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
 
-    .foto{
+    .foto {
         width: 9rem;
         max-width: 150px;
         padding: 2rem;
@@ -292,7 +320,7 @@ input{
     }
 
 
-    .hobbiesTree .hobbie{
+    .hobbiesTree .hobbie {
         width: 15rem;
         max-width: 200px;
     }
@@ -311,26 +339,26 @@ input{
         gap: 5rem;
         align-items: flex-start;
         padding: 2rem;
-        
+
     }
 
-    .projetos li{
+    .projetos li {
         gap: 1rem;
     }
 
-    .projetos img{        
+    .projetos img {
         max-width: 850px;
         width: 43rem;
     }
 
-    .infos{
+    .infos {
         display: flex;
         flex-direction: column;
     }
 
-    .mensagem {    
+    .mensagem {
         width: 96%;
-    }    
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -339,7 +367,7 @@ input{
         margin-bottom: 20px;
     }
 
-    .apresentacao{
+    .apresentacao {
         line-height: 2rem;
     }
 
@@ -358,7 +386,7 @@ input{
         align-items: center;
     }
 
-    .foto{
+    .foto {
         width: 23rem;
         max-width: 368px;
     }
@@ -371,7 +399,7 @@ input{
         max-width: 120px;
     }
 
-    .hobbiesTree .hobbie{
+    .hobbiesTree .hobbie {
         max-width: 120px;
     }
 
@@ -386,7 +414,7 @@ input{
         font-size: 2rem;
     }
 
-    
+
     .projetos {
         display: flex;
         gap: 5rem;
@@ -394,36 +422,44 @@ input{
         align-items: flex-start;
     }
 
-    .projetos li{
+    .projetos li {
         display: flex;
         flex-direction: row;
         gap: 1rem;
     }
 
-    .projetos img{        
+    .projetos img {
         max-width: 750px;
     }
 
 
     .projeto2 {
-        flex-direction: row-reverse!important;
+        flex-direction: row-reverse !important;
         align-self: flex-end;
     }
 
-    .infos{
+    .infos {
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-self: center;
     }
 
-    .assunto{
-        width: 99.5%;
+    .opcoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+
     }
-    .mensagem {    
-        width: 97.5%;
+
+
+    .entre_contato {
+        display: block;
+    }
+
+    .formulario {
+        justify-content: space-around;
     }
 
 
 
-} 
+}

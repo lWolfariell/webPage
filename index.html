@@ -258,34 +258,45 @@
                     Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
 
-            <div class="formulario">
-                <div class="form_opt">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="Nome" id="nome" minlength="3" maxlength="50" required>
-                    <span class="mensagem-erro"></span>
+            <form method="post" class="formulario">
+
+
+                <img class="entre_contato" src="assets/img/contact.jpg" alt="Entrando em contato com celular">
+
+
+                <div class="opcoes">
+
+                    <div class="form_opt">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="Nome" id="nome" minlength="3" maxlength="50" required>
+                        <span class="mensagem-erro"></span>
+                    </div>
+
+                    <div class="form_opt">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="E-mail" id="email" required>
+                        <span class="mensagem-erro_nome"></span>
+                    </div>
+
+                    <div class="form_opt">
+                        <label for="Assunto">Assunto:</label>
+                        <input class="assunto" type="text" name="Assunto" id="assunto" minlength="3" maxlength="50"
+                            required>
+                        <span class="mensagem-erro"></span>
+                    </div>
+
+                    <div class="form_opt">
+                        <label for="Mensagem">Mensagem...</label>
+                        <textarea class="mensagem" name="Mensagem" minlength="3" maxlength="300" required></textarea>
+                        <span class="mensagem-erro"></span>
+                    </div>
+
+                    <input class="input-btn" type="submit" value="Enviar Mensagem">
+
                 </div>
+        </div>
+        </form>
 
-                <div class="form_opt">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="E-mail" id="email" required>
-                    <span class="mensagem-erro_nome"></span>
-                </div>
-
-                <div class="assunto-cont">
-                    <input class="assunto" type="text" name="Assunto" id="assunto" placeholder="Assunto" minlength="3"
-                        maxlength="50" required>
-                    <span class="mensagem-erro"></span>
-                </div>
-
-                <div class="mensagem-cont">
-                    <textarea class="mensagem" name="Mensagem" placeholder="Mensagem" minlength="3" maxlength="300"
-                        required></textarea>
-                    <span class="mensagem-erro"></span>
-                </div>
-
-                <input class="input-btn" type="submit" value="Enviar Mensagem">
-
-            </div>
         </div>
 
         <div class="contato-inferior">
