@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Portfolio</title>
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500&display=swap" rel="stylesheet">
-    <!---->
-
     <!-- <link rel="stylesheet" href="assets/style/reset.css">
      -->
     <link rel="stylesheet" href="assets/style/reset.css">
@@ -258,7 +252,7 @@
                     Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             </div>
 
-            <form action='https://api.staticforms.xyz/submit' id="contato_form" method="post" class="formulario" >
+            <form action='https://api.staticforms.xyz/submit' id="contato_form" method="post" class="formulario">
 
 
                 <img class="entre_contato" src="assets/img/contact.jpg" alt="Entrando em contato com celular">
@@ -267,36 +261,38 @@
                 <div class="opcoes">
 
                     <div class="form_opt">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="Nome" id="nome" minlength="3" maxlength="50" required>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="nome" minlength="3" maxlength="50" required>
                         <span class="mensagem-erro"></span>
                     </div>
 
                     <div class="form_opt">
                         <label for="email">E-mail:</label>
-                        <input type="email" name="E-mail" id="email" required>
+                        <input type="email" name="email" id="email" required>
                         <span class="mensagem-erro_nome"></span>
                     </div>
 
                     <div class="form_opt">
-                        <label for="Assunto">Assunto:</label>
-                        <input class="assunto" type="text" name="Assunto" id="assunto" minlength="3" maxlength="50"
+                        <label for="subject">Assunto:</label>
+                        <input class="assunto" type="text" name="subject" id="assunto" minlength="3" maxlength="50"
                             required>
                         <span class="mensagem-erro"></span>
                     </div>
 
                     <div class="form_opt">
-                        <label for="Mensagem">Mensagem...</label>
-                        <textarea class="mensagem" name="Mensagem" id='mensagem' minlength="3" maxlength="300" required></textarea>
+                        <label for="message">Mensagem...</label>
+                        <textarea class="mensagem" name="message" id='mensagem' minlength="3" maxlength="300"
+                            required></textarea>
                         <span class="mensagem-erro"></span>
                     </div>
 
-                    <input class="input-btn" type="submit" value="Enviar Mensagem">                   
+                    <input class="input-btn" type="submit" value="Enviar Mensagem">
 
-                    <input type="text" name="honeypot" style="display: none;">
-                    <input type="hidden" name="accessKey" value="b33668c8-381e-414f-8f48-2af6ab3dec95"> 
-                    <input type="text" name="honeypot" style="display: none;">
-                    <input type="hidden" name="redirectTo" value="/obrigado.html">
+                    <input type="text" name="honeypot" style="display:none">
+                    <input type="hidden" name="accessKey" value="b33668c8-381e-414f-8f48-2af6ab3dec95">
+                    <input type="hidden" name="replyTo" value="@">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+
                 </div>
         </div>
         </form>
@@ -313,7 +309,6 @@
 
     </footer>
 
-    <script src="assets/main.js"></script>
 </body>
 
 </html>
