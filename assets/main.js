@@ -1,4 +1,4 @@
-document.getElementById('contato_form').addEventListener('submit', (event) =>{
+/* document.getElementById('contato_form').addEventListener('submit', (event) =>{
     event.preventDefault()//evitar atualização da tela
     let nome = document.getElementById('nome').value
     let email = document.getElementById('email').value
@@ -26,4 +26,17 @@ document.getElementById('contato_form').addEventListener('submit', (event) =>{
     })
     
     
-})
+}) */
+/* function criarElementosApi() {
+    const formulario = document.getElementById('contato_form');
+    formulario.innerHTML += `
+        <input type="text" name="honeypot" style="display: none;">
+        <input type="hidden" name="accessKey" value="b33668c8-381e-414f-8f48-2af6ab3dec95"> 
+        <input type="text" name="honeypot" style="display: none;">
+        <input type="hidden" name="redirectTo" value="/obrigado.html">
+    `;
+} */
+
+
+
+
