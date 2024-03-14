@@ -64,11 +64,13 @@ input.input-btn:hover{
 .sobre {
     background-color: var(--cor-cinza-middle);
     padding: var(--espacamento-padding);
+    color: var(--cor-bordas);
+    line-height: 25px;
+    font-weight: 150;
 }
 
-.sobre p {
-    color: var(--cor-bordas);
-}
+
+
 
 .skills {
     background-color: var(--cor-cinza-claro);
