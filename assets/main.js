@@ -28,6 +28,9 @@
     
 })  */
 
+document.getElementById('contato_form').addEventListener('submit', function() {
+        window.location.href = 'obrigado.html';
+    });
 
 
 
