@@ -4,11 +4,27 @@
     cursor: pointer;
 }
 
-input.input-btn:hover{
+input.input-btn:hover {
     background-color: var(--cor-cinza-claro);
     color: var(--cor-roxo-escuro);
     transition: 100ms;
 }
+
+
+.demo:hover {
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-roxo-escuro);
+    transition: 100ms;
+}
+
+.repositorio:hover {
+    background-color: var(--cor-titulos);
+    color: var(--cor-cinza-claro) !important;
+    transition: 100ms;
+}
+
+
+
 /* ------------ Cabeçalho ------------ */
 
 .cabecalho {
@@ -47,6 +63,28 @@ input.input-btn:hover{
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.menus-nav li {
+    position: relative;
+    overflow: hidden;
+}
+
+.menus-nav li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-roxo-escuro);
+    transition: width 0.7s ease;
+    /* Transição suave da largura */
+}
+
+.menus-nav li:hover::before {
+    width: 100%;
+    /* Aumenta a largura ao passar o mouse */
 }
 
 
@@ -154,6 +192,12 @@ input.input-btn:hover{
     font-size: 1rem;
 }
 
+.formacao img {
+    width: 300px;
+    height: 150px;
+
+}
+
 
 .experiencia {
     background-color: var(--cor-cinza-claro);
@@ -169,14 +213,67 @@ input.input-btn:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
+
+/* ------ efeito ease imagens */
+.image-container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--cor-cinza-middle);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*------------------------------------------------------*/
 
 .projetos li {
     display: flex;
     flex-direction: column;
     max-width: 296px;
 }
+
+.projeto {
+    margin-bottom: 30px;
+}
+
+.reverse-row {
+    flex-direction: row-reverse !important;
+    align-self: flex-end;
+}
+
 
 
 .botoes-rep {
@@ -193,7 +290,7 @@ input.input-btn:hover{
     border: 1px solid var(--cor-roxo-escuro);
 }
 
-.repositorio a {
+.repositorio {
     color: var(--cor-roxo-escuro);
 }
 
@@ -338,7 +435,6 @@ input {
 
     .projetos {
         display: flex;
-        gap: 5rem;
         align-items: flex-start;
         padding: 2rem;
 
@@ -351,6 +447,10 @@ input {
     .projetos img {
         max-width: 850px;
         width: 43rem;
+    }
+
+    .overlay {
+        max-width: 850px;
     }
 
     .infos {
@@ -419,7 +519,6 @@ input {
 
     .projetos {
         display: flex;
-        gap: 5rem;
         padding: 0 10rem 0 10rem;
         align-items: flex-start;
     }
@@ -434,8 +533,12 @@ input {
         max-width: 750px;
     }
 
+    .overlay {
+        max-width: 750px;
+    }
 
-    .projeto2 {
+
+    .reverse-row {
         flex-direction: row-reverse !important;
         align-self: flex-end;
     }

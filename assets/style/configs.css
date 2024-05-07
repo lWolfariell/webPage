@@ -9,6 +9,7 @@
     --font-family-primary:'Oxanium', cursive;
     --espacamento-padding: 1rem;
 }
+
 body{
     margin: 0px;
     font-family: var(--font-family-primary);
@@ -19,6 +20,7 @@ h1, h2, h3{
     color: var(--cor-titulos);
     font-weight: 1000;
     line-height: 3rem;
+    margin: 15px 0 5px 0;
 }
 
 p{
@@ -58,4 +60,16 @@ textarea{
     border: none;
     border-radius: 4px;
     resize: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+button:hover {
+    cursor: pointer;
 }
